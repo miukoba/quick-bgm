@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>player</title>
+</head>
+<body>
+<script>
+  const audio = new Audio('./audio/restaurant1.mp3')
+  audio.loop = true
+  const ipcRenderer = require('electron').ipcRenderer
+
+  ipcRenderer.on('play-bgm', (event, args) => {
+    audio.play()
+  })
+
+  ipcRenderer.on('stop-bgm', (event, args) => {
+    audio.pause()
+  })
+</script>
+</body>
+</html>
