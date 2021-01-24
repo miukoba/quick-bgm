@@ -1,6 +1,6 @@
 # quick BGM（仮）
 
-タスクトレイに常駐するBGMを流せるアプリ
+macOSのメニューバーに常駐するBGMを流せるアプリ
 
 Electronを触ってみたかったので作った Noizio や MyNoise みたいなアプリ
 
